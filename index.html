@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Street Chasers clothing — caps, T-shirts, trousers, shorts, socks, hoodies and more.">
+  <title>Street Chasers | Clothing Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Street Chasers home">
+      <img src="images/street-chasers-logo.png" alt="Street Chasers logo" onerror="this.style.display='none'">
+      <span>STREET <b>CHASERS</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a>
+      <a class="nav-order" href="https://wa.me/265884232800?text=Hello%20Street%20Chasers%2C%20I%20want%20to%20ask%20about%20your%20clothing." target="_blank" rel="noopener">WhatsApp Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">STREETWEAR • EVERYDAY STYLE</p>
+        <h1>CHASE YOUR<br><span>OWN STYLE.</span></h1>
+        <p class="hero-copy">Fresh looks. Street energy. Find your next favourite fit at Street Chasers.</p>
+        <a class="button button-light" href="#shop">Explore Collection <span>↘</span></a>
+      </div>
+      <div class="hero-mark"><img src="images/street-chasers-logo.png" alt=""></div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>Find your fit<span>.</span></h2></div>
+        <p class="muted">Choose a product and message us on WhatsApp to check availability.</p>
+      </div>
+      <div class="shop-tools">
+        <input id="searchInput" type="search" placeholder="Search clothes..." aria-label="Search products">
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="All">All categories</option>
+          <option>Caps</option><option>T-Shirts</option><option>Trousers</option><option>Shorts</option>
+          <option>Socks</option><option>Hoodies</option><option>Other</option>
+        </select>
+      </div>
+      <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      <p id="emptyMessage" class="empty-message" hidden>No products match your search yet.</p>
+      <p class="availability-note">Prices and availability may change. Please confirm with us on WhatsApp before making payment.</p>
+    </section>
+
+    <section class="promo" id="about">
+      <div><p class="eyebrow">BUILT FOR YOUR EVERYDAY</p><h2>Wear it your way.</h2></div>
+      <p>Street Chasers brings together streetwear and everyday clothing. See something you like? Ask us if it's available, confirm your size and arrange your order directly on WhatsApp.</p>
+      <a class="button button-dark" href="https://wa.me/265884232800?text=Hello%20Street%20Chasers%2C%20is%20there%20anything%20available%3F" target="_blank" rel="noopener">Chat with us ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="footer-brand" href="#home">STREET CHASERS</a>
+    <p>Streetwear for the ones who keep moving.</p>
+    <a href="https://wa.me/265884232800" target="_blank" rel="noopener">WhatsApp: 0884 232 800</a>
+    <small>© <span id="year"></span> Street Chasers. All rights reserved.</small>
+  </footer>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

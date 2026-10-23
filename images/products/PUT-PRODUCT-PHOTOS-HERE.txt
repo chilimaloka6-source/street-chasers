@@ -1,0 +1,1 @@
+Put your product photos in this folder. Update the image path for each product in ../products.js.
